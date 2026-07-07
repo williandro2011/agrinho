@@ -168,13 +168,13 @@ TEXT
 
 h1{
 
-    font-size:clamp(55px,8vw,110px);
+    font-size:clamp(70px,9vw,140px);
 
-    line-height:.95;
+    font-weight:900;
 
-    font-weight:800;
+    line-height:.88;
 
-    margin-bottom:30px;
+    letter-spacing:-5px;
 
 }
 
@@ -270,7 +270,29 @@ transform:translateY(0);
 
 .paper{
 
-opacity:0;
+.paper{
+
+    width:min(900px,90%);
+
+    margin:auto;
+
+    padding:80px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(18px);
+
+    color:#222;
+
+    box-shadow:
+
+        0 40px 100px rgba(0,0,0,.25);
+
+    border:1px solid rgba(255,255,255,.4);
+
+}
 
 }
 
@@ -289,6 +311,106 @@ overflow-x:hidden;
 body{
 
 overflow-x:hidden;
+
+/* =========================
+   AURORA BACKGROUND
+========================= */
+
+.bg-gradient{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-10;
+
+    overflow:hidden;
+
+}
+
+.bg-gradient::before,
+.bg-gradient::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:900px;
+    height:900px;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    opacity:.45;
+
+    animation:floatBlob 18s ease-in-out infinite;
+
+}
+
+.bg-gradient::before{
+
+    background:#00d084;
+
+    left:-200px;
+    top:-150px;
+
+}
+
+.bg-gradient::after{
+
+    background:#4cc9f0;
+
+    right:-250px;
+    bottom:-200px;
+
+    animation-delay:-8s;
+
+}
+
+@keyframes floatBlob{
+
+    0%{
+
+        transform:
+        translate(0,0)
+        scale(1);
+
+    }
+
+    25%{
+
+        transform:
+        translate(120px,-80px)
+        scale(1.15);
+
+    }
+
+    50%{
+
+        transform:
+        translate(60px,120px)
+        scale(.9);
+
+    }
+
+    75%{
+
+        transform:
+        translate(-100px,40px)
+        scale(1.08);
+
+    }
+
+    100%{
+
+        transform:
+        translate(0,0)
+        scale(1);
+
+    }
+
+}
 
 }
 
