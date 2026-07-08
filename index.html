@@ -1,112 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Agrinho 2026 | Do Campo à Cidade</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800&family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Agrinho — Redação Nota 1000</title>
+  <meta name="description" content="Leia uma redação nota 1000 inspirada no estilo Agrinho. Texto, autor e comentários." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    /* estilos iguais ao template anterior */
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#2dd4bf;--text:#e6eef6;--glass:rgba(255,255,255,0.03)}
+    [data-theme="light"]{--bg:#f6f8fb;--card:#ffffff;--muted:#556070;--accent:#0ea5a4;--text:#0b1220;--glass:rgba(11,17,32,0.03)}
+    *{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui;background:linear-gradient(180deg,var(--bg),#071022 80%);color:var(--text);padding:24px}
+    .container{max-width:980px;margin:0 auto}
+    header{display:flex;justify-content:space-between;margin-bottom:20px}
+    .brand{display:flex;gap:12px}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#042028}
+    h1{font-size:20px;margin:0}.meta{color:var(--muted);font-size:13px}
+    .controls{display:flex;gap:8px}
+    button.icon{background:var(--glass);border:1px solid rgba(255,255,255,0.04);color:var(--text);padding:8px 12px;border-radius:10px;cursor:pointer}
+    main{display:grid;grid-template-columns:1fr 320px;gap:20px}@media(max-width:900px){main{grid-template-columns:1fr}}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border-radius:14px;padding:20px}
+    .essay-title{font-family:Merriweather,serif;font-size:22px;margin:0 0 6px 0}
+    .essay-body{font-family:Merriweather,serif;line-height:1.75;font-size:17px}
+    .essay-body p{margin:0 0 1em 0}
+    footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
+  </style>
 </head>
-
 <body>
+  <div class="container" id="app" data-theme="dark">
+    <header>
+      <div class="brand">
+        <div class="logo">A+</div>
+        <div>
+        </div>
+      </div>
+      <div class="controls">
+        <button class="icon" id="themeToggle">Modo</button>
+        
+      </div>
+    </header>
 
-<div id="cursorGlow"></div>
+    <main>
+      <section class="card">
+        <h2 class="essay-title">Desenvolvimento Sustentável no Campo: O Papel da tecnologia, do Estado e do Cooperativismo</h2>
+        <div class="meta">Autor: <strong>Williandro Moisés Schmidt</strong> • Nota 1000</div>
 
-<div class="bg-gradient"></div>
+        <article id="essay" class="essay-body">
+          <p>A modernização da agricultura brasileira gerou o meio técnico-científico-informacional, conceito de Milton Santos pelo espaço reordenado pela ciência. Contudo, o "Agro Forte" ainda enfrenta o desafio de superar suas externalidades negativas, conciliando o dinamismo econômico com a justiça socioambiental.</p>
 
-<div class="particles"></div>
+          <p>Em primeira análise, a otimização de terras já antropizadas prescinde de novos desmatamentos, pois dados do MapBiomas indicam que a conversão de pastagens degradadas é suficiente para absorver a expansão da safra. Nesse panorama, a Embrapa desempenha papel fulcral ao desenvolver sistemas regenerativos com a Integração Lavoura-Pecuária-Floresta (ILPF).</p>
 
-<!-- HERO -->
+          <p>Todavia, o Paradoxo de Jevons alerta que a eficiência técnica eleva a rentabilidade da terra, o que pode capitalizar o setor para novas expansões ilegais. Logo, a inovação agronômica deve aliar-se ao monitoramento estatal coercitivo e ao desmatamento zero.</p>
 
-<section class="hero">
+          <p>Ademais, o cooperativismo do sul, liderado por gigantes como Coamo, Lar e Copacol, exemplifica como a governança setorial se alinha à conformidade ambiental e à rastreabilidade exigidas pelo mercado internacional. Não obstante, essa "blindagem verde" não apaga as assimetrias históricas do campo.</p>
 
-<div class="hero-content">
+          <p>Como sinaliza o sociólogo José de Souza Martins, a modernização convive com a concentração fundiária e o uso intensivo de insumos químicos. A autorregulação corporativa é necessária, mas insuficiente sem considerar os impactos ecológicos nas comunidades tradicionais periféricas.</p>
 
-<span class="tag">
-🌱 AGRINHO 2026
-</span>
+          <p>Infere-se, portanto, que a perenidade do agronegócio depende da superação dessas contradições estruturais. Cabe ao Ministério da Agricultura, em parceria com as cooperativas, condicionar o crédito do Plano ABC+ à transição ecológica e ao manejo sustentável.</p>
 
-<h1>
+          <p>Paralelamente, essas instituições devem utilizar os dados de satélite do MapBiomas para a auditoria pública e aplicação de sanções imediatas e infratores. Só assim o Brasil consolidará um modelo de desenvolvimento verdadeiramente sustentável.</p>
+        </article>
+      </section>
+    </main>
 
-Do Campo<br>
-à Cidade
-
-</h1>
-
-<p>
-
-Uma redação sobre como a conexão entre quem produz,
-quem aprende e quem transforma pode construir
-um futuro mais sustentável.
-
-</p>
-
-<a href="#redacao">
-
-<button>
-
-Explorar
-
-</button>
-
-</a>
-
-</div>
-
-<div class="scroll">
-
-↓
-
-</div>
-
-</section>
-
-<!-- REDAÇÃO -->
-
-<section id="redacao">
-
-<div class="paper">
-
-<h2>
-
-Minha Redação
-
-</h2>
-
-<p>
-
-COLE SUA REDAÇÃO AQUI.
-
-</p>
-
-</div>
-
-</section>
-
-<footer>
-
-Feito com ❤️ para o Agrinho 2026
-
-</footer>
-
-<script src="script.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
-
-<script src="script.js"></script>
-
+  <script>
+    const app=document.getElementById('app');
+    const themeToggle=document.getElementById('themeToggle');
+    themeToggle.addEventListener('click',()=>{
+      const current=app.getAttribute('data-theme')==='dark'?'light':'dark';
+      app.setAttribute('data-theme',current);
+    });
+    document.getElementById('copyBtn').addEventListener('click',async()=>{
+      await navigator.clipboard.writeText(document.getElementById('essay').innerText);
+      alert('Redação copiada!');
+    });
+    document.getElementById('printBtn').addEventListener('click',()=>window.print());
+    document.getElementById('shareBtn').addEventListener('click',async()=>{
+      if(navigator.share){
+        await navigator.share({title:'Minha Redação Nota 1000',text:document.getElementById('essay').innerText,url:location.href});
+      }else{
+        alert('Compartilhamento não suportado neste navegador.');
+      }
+    });
+  </script>
 </body>
-
 </html>
